@@ -11,13 +11,13 @@ volumes:
     driver: local
     driver_opts:
       type: none
-      device: /ruta/a/tu/directorio/postgres
+      device: /home/zabbix/postgres
       o: bind
   zabbix_server_data:
     driver: local
     driver_opts:
       type: none
-      device: /ruta/a/tu/directorio/zabbix_server
+      device: /home/zabbix/server
       o: bind
 
 services:
