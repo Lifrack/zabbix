@@ -36,7 +36,7 @@ services:
     restart: unless-stopped
 
   zabbix-server-pgsql:
-    image: zabbix/zabbix-server-pgsql:alpine-7.2-latest
+    image: zabbix/zabbix-server-pgsql:alpine-7.2.*
     container_name: zabbix-server-pgsql
     environment:
       DB_SERVER_HOST: "postgres-server"
